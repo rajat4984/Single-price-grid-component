@@ -112,6 +112,7 @@ a {
 @media(min-width:600px){
   .container{
     margin: 1em 19em;
+    max-width: 900px;
   }
   .header{
     padding: 2em 5.5em 2em 2.5em;
