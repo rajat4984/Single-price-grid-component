@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 1em;
+  background-color: var(--Light-Gray);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  box-shadow: 1px 0px 5px 1px rgb(170, 170, 170);
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.header {
+  background-color: #fff;
+  padding: 2em 1.4em;
+  border-radius: 10px 10px 0 0;
+}
+
+.header > h1 {
+  color: var(--Cyan);
+  font-size: 1.3rem;
+  margin-bottom: 1.5em;
+}
+
+.header > h3 {
+  color: var(--Bright-Yellow);
+  margin-bottom: 1em;
+}
+
+.header > p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+}
+
+.left {
+  background-color: var(--Cyan);
+  color: var(--Light-Gray);
+  padding: 2em 1.4em;
+}
+
+.left > h3 {
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+}
+
+.price-per-month {
+  color: rgba(255, 255, 255, 0.644);
+  margin-bottom: .5em;
+}
+
+.left > p > span {
+  color: var(--Light-Gray);
+  font-size: 2.5rem;
+}
+
+.left > button {
+  background-color: var(--Bright-Yellow);
+  font-size: 1.2rem;
+  padding: 0.5em 5.5em;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: .5em 0;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.left-second-p {
+  margin-bottom: 2em;
+}
+
+.right{
+  padding: 2em 7em 2em 1.4em;
+  background-color:  hsl(179, 67%, 47%);
+}
+
+.right > h3{
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  color: var(--Light-Gray);
+}
+
+.right > p{
+  color: var(--Light-Gray);
+  line-height: 1.5;
+}
+
+@media(min-width:600px){
+  .container{
+    margin: 1em 17em;
+  }
+  .header{
+    padding: 2em 2.2em;
+  }
+  .header > h1{
+    font-size: 2rem;
+    margin-bottom: .8em;
+  }
+  .left > h3,.right > h3{
+    font-size: 1.7rem;
+  }
+  .bottom-container{
+    display: flex;
+  }
+  .left{
+    flex-basis: 50%;
+    border-radius: 0 0 0 10px;
+  }
+  .right{
+    flex-basis: 50%;
+    border-radius: 0 0 10px 0;
+  }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
